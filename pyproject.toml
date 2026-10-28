@@ -6,9 +6,17 @@ readme = "README.md"
 authors = [
     { name = "Maleeha Nadeem", email = "maleehanadeem777@gmail.com" }
 ]
-requires-python = ">=3.15"
-dependencies = []
-
+requires-python = ">=3.11"
+dependencies = [
+    "groq>=0.31.0",
+    "langchain>=0.3.27,<1.0",
+    "langchain-core>=0.3.72,<1.0",
+    "langchain-groq>=0.3.7,<1.0",
+    "langgraph>=0.6.3,<1.0",
+    "pip>=25.2",
+    "pydantic>=2.11.7",
+    "python-dotenv>=1.1.1",
+]
 [project.scripts]
 app-builder = "app_builder:main"
 
